@@ -8,7 +8,7 @@ export default function Contact() {
   const [form, setForm] = useState({
     name: '',
     email: '',
-    project: 'Custom online writing job',
+    project: 'Essay, paper, or custom writing',
     deadline: '',
     message: '',
   });
@@ -37,10 +37,10 @@ export default function Contact() {
         <div className="container page-hero-grid">
           <div>
             <p className="eyebrow">Send a writing job</p>
-            <h1>Tell me what needs to be written.</h1>
+            <h1>Tell me what you need help with.</h1>
           </div>
           <p className="page-hero-lead">
-            Share the instructions, deadline, length, format, and any source material. The form opens your email app with
+            Share the instructions, deadline, expected output, and any source material. The form opens your email app with
             the job details ready to send directly to MidnightScribe.
           </p>
         </div>
@@ -51,10 +51,9 @@ export default function Contact() {
           <Reveal className="contact-info">
             <div>
               <p className="eyebrow">Start with the brief</p>
-              <h2>The more useful the instructions, the better the final work.</h2>
+              <h2>The clearer the instructions, the more accurately I can scope the support.</h2>
               <p>
-                Include what needs to be done, the intended audience, approximate length, deadline, formatting needs, and
-                any references or files that should guide the job.
+                Include the task, intended outcome, deadline, approximate length where relevant, formatting needs, and any references or files that should guide the work or tutoring session.
               </p>
             </div>
 
@@ -106,14 +105,16 @@ export default function Contact() {
               </div>
 
               <label>
-                What type of writing job is it?
+                What type of support do you need?
                 <select name="project" value={form.project} onChange={updateField}>
-                  <option>Custom online writing job</option>
-                  <option>Research & academic support</option>
+                  <option>Essay, paper, or custom writing</option>
+                  <option>Research or academic support</option>
+                  <option>Math, statistics, or STEM tutoring</option>
+                  <option>Data analysis or technical support</option>
+                  <option>Programming guidance or debugging</option>
                   <option>Article, blog, or web content</option>
                   <option>Editing, rewriting, or proofreading</option>
                   <option>Business or professional writing</option>
-                  <option>Report, summary, or research</option>
                   <option>Something else</option>
                 </select>
               </label>
@@ -130,13 +131,13 @@ export default function Contact() {
               </label>
 
               <label>
-                Job requirements
+                Project requirements
                 <textarea
                   name="message"
                   value={form.message}
                   onChange={updateField}
                   rows="7"
-                  placeholder="Describe what needs to be written, the expected length, instructions, formatting, deadline, and any important context."
+                  placeholder="Describe the project, expected outcome, instructions, deadline, and any important context. Do not send account passwords or ask me to take graded assessments on your behalf."
                   required
                 />
               </label>

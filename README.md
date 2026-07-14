@@ -1,6 +1,6 @@
 # MidnightScribe
 
-A modern responsive website for an independent online writing service, built with React and Vite.
+A modern responsive website for an independent writing, research, editing, and study-support service, built with React and Vite.
 
 ## Brand palette
 
@@ -10,21 +10,42 @@ A modern responsive website for an independent online writing service, built wit
 - Rosy Taupe: `#B89E97`
 - Almond Silk: `#DECCCC`
 
+## Typography
+
+- Headings and UI emphasis: Work Sans
+- Body copy: Open Sans
+
 ## Features
 
 - Responsive multi-page React website
 - Full-width student photography hero
-- Poppins and Inter typography
+- Open Sans and Work Sans typography
 - Scroll reveal, hover, marquee, and hero animations
-- Writing services, About, Contact, FAQ, and process sections
+- Writing, research, editing, tutoring, and technical-support service sections
+- Transparent starting-rate cards
+- Support-area and trust sections
+- About, Services, Contact, FAQ, and process pages/sections
 - Mobile navigation
 - Contact form powered by `mailto:`
 - Vercel SPA routing configuration
 - Local image assets
+- `.gitignore` included
+
+## Starting rates displayed on the website
+
+- Writing and research support: from `$10/page`
+- Technical and STEM writing: from `$15/page`
+- Ongoing support: custom quote
+
+Final pricing is presented as dependent on complexity, deadline, length, research depth, and scope.
+
+## Academic integrity position
+
+The website offers legitimate tutoring, research guidance, writing, editing, proofreading, and technical support. It does not advertise taking graded tests, exams, or quizzes on behalf of students, impersonating students, or guaranteeing grades.
 
 ## Contact
 
-Writing-job inquiries are addressed to:
+Project inquiries are addressed to:
 
 `theemidnightscribe@gmail.com`
 
