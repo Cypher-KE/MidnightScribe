@@ -1,27 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap');
 
+
 :root {
-  --espresso: #2d1b16;
-  --espresso-soft: #43271f;
-  --terracotta: #c96f4a;
-  --terracotta-dark: #a95135;
-  --apricot: #f1b47d;
-  --cream: #fff9f1;
-  --cream-deep: #f4e8d8;
-  --sand: #e8d1b8;
+  --black: #000000;
+  --dodger-blue: #1098f7;
   --white: #ffffff;
-  --ink: #2a2421;
-  --muted: #756b65;
-  --muted-light: #bdaea3;
-  --border: rgba(70, 42, 32, 0.13);
-  --border-strong: rgba(70, 42, 32, 0.2);
-  --shadow-sm: 0 14px 38px rgba(79, 47, 35, 0.08);
-  --shadow-lg: 0 28px 80px rgba(66, 38, 29, 0.18);
+  --rosy-taupe: #b89e97;
+  --almond-silk: #decccc;
+
+  --espresso: var(--black);
+  --espresso-soft: var(--black);
+  --terracotta: var(--dodger-blue);
+  --terracotta-dark: var(--dodger-blue);
+  --apricot: var(--almond-silk);
+  --cream: var(--white);
+  --cream-deep: var(--almond-silk);
+  --sand: var(--rosy-taupe);
+  --ink: var(--black);
+  --muted: rgba(0, 0, 0, 0.62);
+  --muted-light: var(--rosy-taupe);
+  --border: rgba(0, 0, 0, 0.12);
+  --border-strong: rgba(0, 0, 0, 0.2);
+  --shadow-sm: 0 14px 38px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 28px 80px rgba(0, 0, 0, 0.18);
   --radius-sm: 16px;
   --radius-md: 24px;
   --radius-lg: 36px;
   --container: 1180px;
 }
+
 
 * {
   box-sizing: border-box;
@@ -153,13 +160,13 @@ h3 {
 .button:not(.button-glass):not(.button-outline):not(.button-light) {
   color: var(--white);
   background: var(--terracotta);
-  box-shadow: 0 14px 34px rgba(201, 111, 74, 0.27);
+  box-shadow: 0 14px 34px rgba(16, 152, 247, 0.27);
 }
 
 .button-primary:hover,
 .button:not(.button-glass):not(.button-outline):not(.button-light):hover {
-  background: var(--terracotta-dark);
-  box-shadow: 0 18px 40px rgba(169, 81, 53, 0.3);
+  background: var(--black);
+  box-shadow: 0 18px 40px rgba(16, 152, 247, 0.3);
 }
 
 .button-small {
@@ -187,7 +194,7 @@ h3 {
 
 .button-outline:hover {
   border-color: var(--terracotta);
-  background: rgba(201, 111, 74, 0.07);
+  background: rgba(16, 152, 247, 0.07);
 }
 
 .button-light {
@@ -229,8 +236,8 @@ h3 {
 }
 
 .site-header.is-scrolled {
-  background: rgba(45, 27, 22, 0.92);
-  box-shadow: 0 12px 40px rgba(50, 29, 22, 0.16);
+  background: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.16);
   backdrop-filter: blur(18px);
 }
 
@@ -266,7 +273,7 @@ h3 {
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  background: var(--apricot);
+  background: var(--dodger-blue);
 }
 
 .brand-moon::after {
@@ -371,7 +378,7 @@ h3 {
 
 .mobile-menu {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-  background: rgba(45, 27, 22, 0.98);
+  background: rgba(0, 0, 0, 0.98);
   animation: menuDrop 220ms ease both;
 }
 
@@ -424,8 +431,8 @@ h3 {
 
 .hero-overlay {
   background:
-    linear-gradient(90deg, rgba(45, 27, 22, 0.92) 0%, rgba(55, 31, 22, 0.76) 45%, rgba(55, 31, 22, 0.2) 75%, rgba(45, 27, 22, 0.35) 100%),
-    linear-gradient(180deg, rgba(35, 20, 16, 0.25) 0%, rgba(35, 20, 16, 0.18) 55%, rgba(35, 20, 16, 0.62) 100%);
+    linear-gradient(90deg, rgba(0, 0, 0, 0.94) 0%, rgba(0, 0, 0, 0.78) 46%, rgba(0, 0, 0, 0.2) 76%, rgba(16, 152, 247, 0.18) 100%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.28) 0%, rgba(0, 0, 0, 0.18) 55%, rgba(0, 0, 0, 0.72) 100%);
 }
 
 .hero-glow {
@@ -436,7 +443,7 @@ h3 {
   bottom: -30vw;
   left: auto;
   border-radius: 50%;
-  background: rgba(241, 180, 125, 0.2);
+  background: rgba(16, 152, 247, 0.2);
   filter: blur(20px);
 }
 
@@ -509,7 +516,7 @@ h3 {
 }
 
 .hero-trust svg {
-  color: var(--apricot);
+  color: var(--dodger-blue);
 }
 
 .hero-float-card {
@@ -523,7 +530,7 @@ h3 {
   padding: 16px 18px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 20px;
-  background: rgba(255, 249, 241, 0.94);
+  background: rgba(255, 255, 255, 0.94);
   box-shadow: var(--shadow-lg);
   color: var(--espresso);
   backdrop-filter: blur(18px);
@@ -612,7 +619,7 @@ h3 {
 .audience-marquee {
   overflow: hidden;
   border-bottom: 1px solid var(--border);
-  background: var(--cream-deep);
+  background: var(--almond-silk);
 }
 
 .marquee-track {
@@ -626,7 +633,7 @@ h3 {
   align-items: center;
   gap: 26px;
   padding: 19px 26px;
-  color: var(--espresso-soft);
+  color: var(--black);
   font-family: 'Poppins', sans-serif;
   font-size: 0.84rem;
   font-weight: 700;
@@ -708,7 +715,7 @@ h3 {
   position: relative;
   height: 100%;
   border: 1px solid var(--border);
-  background: rgba(255, 255, 255, 0.64);
+  background: rgba(222, 204, 204, 0.34);
   box-shadow: 0 0 0 rgba(0, 0, 0, 0);
   transition: transform 260ms ease, box-shadow 260ms ease, border-color 260ms ease, background 260ms ease;
 }
@@ -716,7 +723,7 @@ h3 {
 .service-card:hover,
 .service-detail-card:hover,
 .value-card:hover {
-  border-color: rgba(201, 111, 74, 0.32);
+  border-color: rgba(16, 152, 247, 0.32);
   background: var(--white);
   box-shadow: var(--shadow-sm);
   transform: translateY(-7px);
@@ -736,7 +743,7 @@ h3 {
   bottom: -34px;
   width: 95px;
   height: 95px;
-  border: 1px solid rgba(201, 111, 74, 0.11);
+  border: 1px solid rgba(16, 152, 247, 0.11);
   border-radius: 50%;
   content: '';
   transition: transform 320ms ease;
@@ -767,7 +774,7 @@ h3 {
   place-items: center;
   border-radius: 13px;
   color: var(--terracotta-dark);
-  background: rgba(201, 111, 74, 0.09);
+  background: rgba(16, 152, 247, 0.1);
 }
 
 .service-card p,
@@ -784,7 +791,7 @@ h3 {
 
 /* Image story */
 .image-story-section {
-  background: var(--cream-deep);
+  background: linear-gradient(135deg, rgba(222, 204, 204, 0.9), rgba(184, 158, 151, 0.42));
 }
 
 .image-story-grid {
@@ -815,7 +822,7 @@ h3 {
   padding: 20px;
   border: 1px solid rgba(255, 255, 255, 0.65);
   border-radius: 20px;
-  background: rgba(255, 249, 241, 0.94);
+  background: rgba(255, 255, 255, 0.94);
   box-shadow: var(--shadow-sm);
   backdrop-filter: blur(14px);
 }
@@ -909,7 +916,7 @@ h3 {
   height: 48px;
   margin: 0 auto 26px;
   place-items: center;
-  border: 1px solid rgba(201, 111, 74, 0.28);
+  border: 1px solid rgba(16, 152, 247, 0.28);
   border-radius: 50%;
   color: var(--terracotta-dark);
   background: var(--cream);
@@ -943,8 +950,8 @@ h3 {
   border-radius: var(--radius-lg);
   color: var(--white);
   background:
-    radial-gradient(circle at 88% 18%, rgba(241, 180, 125, 0.28), transparent 30%),
-    linear-gradient(135deg, var(--espresso), #5a3023);
+    radial-gradient(circle at 88% 18%, rgba(16, 152, 247, 0.28), transparent 30%),
+    linear-gradient(135deg, var(--black) 0%, var(--black) 56%, var(--dodger-blue) 150%);
   box-shadow: var(--shadow-lg);
 }
 
@@ -1094,8 +1101,8 @@ h3 {
   border-radius: var(--radius-lg);
   color: var(--white);
   background:
-    linear-gradient(120deg, rgba(45, 27, 22, 0.96), rgba(99, 52, 37, 0.94)),
-    var(--espresso);
+    linear-gradient(120deg, rgba(0, 0, 0, 0.98), rgba(16, 152, 247, 0.82)),
+    var(--black);
 }
 
 .cta-card .eyebrow {
@@ -1132,8 +1139,8 @@ h3 {
   padding: 190px 0 100px;
   color: var(--white);
   background:
-    radial-gradient(circle at 82% 25%, rgba(241, 180, 125, 0.25), transparent 30%),
-    linear-gradient(135deg, var(--espresso), #683b2c);
+    radial-gradient(circle at 82% 25%, rgba(16, 152, 247, 0.25), transparent 30%),
+    linear-gradient(135deg, var(--black) 0%, var(--black) 56%, var(--dodger-blue) 150%);
 }
 
 .page-hero::after {
@@ -1205,7 +1212,7 @@ h3 {
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 18px;
   color: var(--white);
-  background: rgba(45, 27, 22, 0.78);
+  background: rgba(0, 0, 0, 0.78);
   backdrop-filter: blur(14px);
 }
 
@@ -1233,7 +1240,7 @@ h3 {
 }
 
 .values-section {
-  background: var(--cream-deep);
+  background: linear-gradient(135deg, rgba(222, 204, 204, 0.88), rgba(184, 158, 151, 0.34));
 }
 
 .values-section .section-heading {
@@ -1262,7 +1269,7 @@ h3 {
 
 .fit-section {
   color: var(--white);
-  background: linear-gradient(135deg, var(--espresso), #5d3427);
+  background: linear-gradient(135deg, var(--black) 0%, var(--black) 56%, var(--dodger-blue) 150%);
 }
 
 .fit-grid {
@@ -1357,7 +1364,7 @@ h3 {
 }
 
 .service-process-section {
-  background: var(--cream-deep);
+  background: linear-gradient(135deg, rgba(222, 204, 204, 0.88), rgba(184, 158, 151, 0.36));
 }
 
 .service-process-section .process-card > span {
@@ -1407,7 +1414,7 @@ h3 {
   place-items: center;
   border-radius: 14px;
   color: var(--terracotta-dark);
-  background: rgba(201, 111, 74, 0.1);
+  background: rgba(16, 152, 247, 0.1);
 }
 
 .contact-detail-list small,
@@ -1433,7 +1440,7 @@ h3 {
   padding: 17px 18px;
   border: 1px solid var(--border);
   border-radius: 16px;
-  background: var(--cream-deep);
+  background: rgba(222, 204, 204, 0.52);
 }
 
 .mini-moon {
@@ -1442,7 +1449,7 @@ h3 {
   height: 25px;
   flex: 0 0 25px;
   border-radius: 50%;
-  background: var(--apricot);
+  background: var(--dodger-blue);
 }
 
 .mini-moon::after {
@@ -1515,7 +1522,7 @@ h3 {
 .contact-form textarea:focus {
   border-color: var(--terracotta);
   background: var(--white);
-  box-shadow: 0 0 0 4px rgba(201, 111, 74, 0.1);
+  box-shadow: 0 0 0 4px rgba(16, 152, 247, 0.1);
 }
 
 .form-submit {
@@ -1543,7 +1550,7 @@ h3 {
   padding: 30px 34px;
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
-  background: var(--cream-deep);
+  background: linear-gradient(135deg, rgba(222, 204, 204, 0.78), rgba(184, 158, 151, 0.32));
 }
 
 .direct-email-card p {
@@ -1634,7 +1641,7 @@ h3 {
   place-items: center;
   padding: 120px 0;
   color: var(--white);
-  background: linear-gradient(135deg, var(--espresso), #653729);
+  background: linear-gradient(135deg, var(--black) 0%, var(--black) 56%, var(--dodger-blue) 150%);
   text-align: center;
 }
 
@@ -1728,8 +1735,8 @@ h3 {
 
   .hero-overlay {
     background:
-      linear-gradient(90deg, rgba(45, 27, 22, 0.92) 0%, rgba(45, 27, 22, 0.72) 70%, rgba(45, 27, 22, 0.42) 100%),
-      linear-gradient(180deg, rgba(35, 20, 16, 0.24) 0%, rgba(35, 20, 16, 0.3) 60%, rgba(35, 20, 16, 0.7) 100%);
+      linear-gradient(90deg, rgba(0, 0, 0, 0.94) 0%, rgba(0, 0, 0, 0.76) 70%, rgba(16, 152, 247, 0.22) 100%),
+      linear-gradient(180deg, rgba(0, 0, 0, 0.28) 0%, rgba(0, 0, 0, 0.34) 60%, rgba(0, 0, 0, 0.76) 100%);
   }
 
   .hero-float-card {

@@ -2,110 +2,110 @@ import {
   BookOpenCheck,
   BriefcaseBusiness,
   FilePenLine,
-  GraduationCap,
-  Lightbulb,
+  Newspaper,
   ScanText,
+  SearchCheck,
 } from 'lucide-react';
 
 export const services = [
   {
     icon: FilePenLine,
-    title: 'Writing & Draft Development',
+    title: 'Custom Online Writing Jobs',
     description:
-      'Clear, original drafts shaped around your brief, audience, tone, and intended outcome.',
-    items: ['Essays and long-form writing', 'Articles and thought pieces', 'Statements and personal narratives'],
-  },
-  {
-    icon: ScanText,
-    title: 'Editing & Proofreading',
-    description:
-      'Careful revisions that strengthen structure, flow, grammar, clarity, and consistency without flattening your voice.',
-    items: ['Developmental editing', 'Line and copy editing', 'Final proofreading'],
-  },
-  {
-    icon: GraduationCap,
-    title: 'Academic Writing Support',
-    description:
-      'Ethical guidance for planning, research, argument development, citations, and improving your own academic writing.',
-    items: ['Essay planning and structure', 'Research guidance', 'Referencing and presentation'],
-  },
-  {
-    icon: BriefcaseBusiness,
-    title: 'Professional Documents',
-    description:
-      'Polished writing for moments where credibility, clarity, and a strong first impression matter.',
-    items: ['CV and profile polishing', 'Reports and proposals', 'Business and formal communication'],
-  },
-  {
-    icon: Lightbulb,
-    title: 'Content & Brand Writing',
-    description:
-      'Strategic content that gives businesses, creators, and personal brands a sharper and more consistent voice.',
-    items: ['Website copy', 'Brand messaging', 'Social and campaign content'],
+      'Send the brief, requirements, and deadline. I take on one-off and recurring writing projects and build the work around the exact job.',
+    items: ['Custom briefs and writing assignments', 'Short-form and long-form projects', 'One-off and recurring client work'],
   },
   {
     icon: BookOpenCheck,
-    title: 'Research & Review',
+    title: 'Research & Academic Support',
     description:
-      'Structured support for turning scattered information into coherent, credible, well-organized material.',
-    items: ['Source synthesis', 'Literature summaries', 'Document review and feedback'],
+      'Research-driven writing and editorial support for structured academic and research projects that need clarity, evidence, and careful presentation.',
+    items: ['Research and literature reviews', 'Proposals and structured reports', 'Referencing, formatting, and editing'],
+  },
+  {
+    icon: Newspaper,
+    title: 'Articles, Blogs & Web Content',
+    description:
+      'Useful, readable content shaped for the audience, platform, and purpose instead of generic filler written only to hit a word count.',
+    items: ['Blog posts and feature articles', 'Website and landing-page copy', 'SEO-aware content writing'],
+  },
+  {
+    icon: ScanText,
+    title: 'Editing, Rewriting & Proofreading',
+    description:
+      'Existing drafts are tightened, reorganized, rewritten, and polished for stronger flow, grammar, consistency, and readability.',
+    items: ['Developmental and line editing', 'Rewriting and clarity improvement', 'Final proofreading and cleanup'],
+  },
+  {
+    icon: BriefcaseBusiness,
+    title: 'Business & Professional Writing',
+    description:
+      'Professional documents written to communicate clearly, look credible, and make the right impression with clients, employers, or stakeholders.',
+    items: ['Reports and proposals', 'Profiles, bios, and personal statements', 'Formal business communication'],
+  },
+  {
+    icon: SearchCheck,
+    title: 'Reports, Summaries & Research',
+    description:
+      'Complex source material is researched, organized, and turned into clear summaries, reports, briefs, or structured documents.',
+    items: ['Research summaries and briefs', 'Source synthesis and document review', 'Structured reports and explainers'],
   },
 ];
 
 export const processSteps = [
   {
     number: '01',
-    title: 'Share the brief',
-    text: 'Send the goal, context, deadline, preferred tone, and any source material that matters.',
+    title: 'Send the job',
+    text: 'Share the brief, instructions, deadline, word count, formatting requirements, and any source material that matters.',
   },
   {
     number: '02',
-    title: 'Shape the direction',
-    text: 'The scope is clarified early so the writing has the right argument, structure, and voice before polishing begins.',
+    title: 'Confirm scope & quote',
+    text: 'I review what the job requires, clarify anything important, and confirm the scope, timeline, and price before work begins.',
   },
   {
     number: '03',
-    title: 'Write and refine',
-    text: 'The work is developed with close attention to clarity, coherence, originality, and the details that make it credible.',
+    title: 'Write & quality-check',
+    text: 'I research where needed, draft the work, edit for clarity and flow, and check that the final result follows the agreed brief.',
   },
   {
     number: '04',
-    title: 'Review and deliver',
-    text: 'You receive a polished final document with room for reasonable refinements where the agreed brief calls for them.',
+    title: 'Deliver & refine',
+    text: 'You receive the completed work by the agreed deadline, with reasonable refinements available where the original brief calls for them.',
   },
 ];
 
 export const faqs = [
   {
-    question: 'What kind of writing do you handle?',
+    question: 'What kinds of online writing jobs do you take?',
     answer:
-      'MidnightScribe supports long-form writing, editing, proofreading, research guidance, professional documents, website copy, personal statements, and other custom writing projects. The best fit is work where clarity, structure, voice, and careful thinking matter.',
+      'I take on custom writing briefs, articles, blogs, research-based projects, reports, professional documents, editing, rewriting, proofreading, and other online writing work. Send the requirements and I will confirm whether the project is a good fit.',
   },
   {
-    question: 'How do I request a quote?',
+    question: 'How do I send a writing job?',
     answer:
-      'Use the contact page or any “Start a Project” button. Include your project type, approximate length, deadline, and what you already have. You will then receive a response by email with the next steps.',
+      'Use the contact page or any “Send a writing job” button. Include the type of work, instructions, approximate length, deadline, and any files or sources I should review. The website opens a prefilled email so you can send everything directly.',
   },
   {
-    question: 'Can you work with urgent deadlines?',
+    question: 'Do you accept urgent deadlines?',
     answer:
-      'Sometimes. Availability depends on the size and complexity of the project. Send the deadline as early as possible so the scope can be assessed honestly.',
+      'Yes, when the workload and project complexity make the deadline realistic. Send urgent work as early as possible so I can confirm availability before you depend on the turnaround time.',
   },
   {
-    question: 'Do you provide academic support?',
+    question: 'Can you follow a specific brief or formatting style?',
     answer:
-      'Yes. Support focuses on ethical writing help such as planning, research guidance, structure, editing, feedback, citations, and improving your own work. MidnightScribe does not promote impersonation, exam cheating, or dishonest submission practices.',
+      'Yes. I can work from supplied instructions, templates, tone guides, citation styles, source materials, and formatting requirements. The clearer the brief, the more precisely the final work can match it.',
   },
   {
-    question: 'Will my project be kept private?',
+    question: 'Is my project kept private?',
     answer:
-      'Yes. Project details are treated as confidential and are used only to understand and complete the agreed work.',
+      'Yes. Project details and files are treated as confidential and used only to understand and complete the agreed work.',
   },
 ];
 
 export const strengths = [
-  'Clear, human-centered writing',
-  'Voice-conscious editing',
-  'Research-minded approach',
-  'Deadline-aware communication',
+  'Brief-driven work',
+  'Original, human writing',
+  'Deadline-focused delivery',
+  'Direct communication',
 ];

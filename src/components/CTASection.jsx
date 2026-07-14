@@ -7,15 +7,15 @@ export default function CTASection() {
       <div className="container">
         <div className="cta-card">
           <div>
-            <p className="eyebrow">Your idea is already worth something.</p>
-            <h2>Let’s make the words match it.</h2>
+            <p className="eyebrow">Have a writing job ready?</p>
+            <h2>Send the brief. I’ll take it from there.</h2>
             <p>
-              Tell MidnightScribe what you are working on, where you are stuck, and when you need it.
+              Share the requirements, deadline, and any source material so I can review the job and confirm the next step.
             </p>
           </div>
           <div className="cta-actions">
             <Link className="button button-light" to="/contact">
-              Start a project <ArrowRight size={18} />
+              Send a writing job <ArrowRight size={18} />
             </Link>
             <a className="text-link light-link" href="mailto:theemidnightscribe@gmail.com">
               <Mail size={17} /> Email directly

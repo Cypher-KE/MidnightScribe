@@ -11,12 +11,12 @@ export default function Services() {
       <section className="page-hero services-page-hero">
         <div className="container page-hero-grid">
           <div>
-            <p className="eyebrow">Services</p>
-            <h1>Writing support that meets the project where it is.</h1>
+            <p className="eyebrow">Writing services</p>
+            <h1>Send the job. Get focused writing built around the brief.</h1>
           </div>
           <p className="page-hero-lead">
-            Start with a blank page, an unfinished draft, or something technically complete that still does not feel
-            right. The service is shaped around the real gap.
+            I take on online writing projects across content, research, editing, professional documents, and custom
+            briefs. The exact scope depends on what you need done.
           </p>
         </div>
       </section>
@@ -44,7 +44,7 @@ export default function Services() {
                     ))}
                   </ul>
                   <Link className="card-link" to="/contact">
-                    Request this service <ArrowRight size={16} />
+                    Send this writing job <ArrowRight size={16} />
                   </Link>
                 </article>
               </Reveal>
@@ -57,9 +57,9 @@ export default function Services() {
         <div className="container">
           <Reveal>
             <SectionHeading
-              eyebrow="How projects move"
-              title="A clear process from brief to final copy."
-              text="The process stays simple so the attention stays on the quality of the work."
+              eyebrow="How jobs move"
+              title="Clear requirements in. Finished work out."
+              text="The workflow is designed to keep communication direct and make the deliverable clear before writing begins."
               align="center"
             />
           </Reveal>

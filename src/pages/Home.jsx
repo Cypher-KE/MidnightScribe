@@ -14,7 +14,7 @@ import Reveal from '../components/Reveal';
 import SectionHeading from '../components/SectionHeading';
 import { faqs, processSteps, services, strengths } from '../data/siteData';
 
-const audiences = ['Students', 'Professionals', 'Creators', 'Growing brands', 'Researchers', 'Founders'];
+const audiences = ['Students', 'Researchers', 'Professionals', 'Businesses', 'Agencies', 'Founders'];
 
 export default function Home() {
   const [openFaq, setOpenFaq] = useState(0);
@@ -33,21 +33,21 @@ export default function Home() {
         <div className="container hero-content">
           <div className="hero-copy">
             <div className="hero-badge hero-enter hero-enter-1">
-              <Sparkles size={15} /> Writing, editing and thoughtful support
+              <Sparkles size={15} /> Online writing • Editing • Research • Content
             </div>
             <h1 className="hero-enter hero-enter-2">
-              Your ideas deserve <span>words that land.</span>
+              Send the brief. <span>I’ll handle the writing.</span>
             </h1>
             <p className="hero-lead hero-enter hero-enter-3">
-              MidnightScribe turns rough thinking, unfinished drafts, and complex ideas into clear, credible writing that
-              still sounds like you.
+              MidnightScribe is an independent online writing service for clients who need reliable, polished work.
+              Share the job, requirements, and deadline; I take it from there.
             </p>
             <div className="hero-actions hero-enter hero-enter-4">
               <Link className="button button-primary" to="/contact">
-                Start a project <ArrowRight size={18} />
+                Send a writing job <ArrowRight size={18} />
               </Link>
               <Link className="button button-glass" to="/services">
-                Explore services
+                View writing services
               </Link>
             </div>
             <div className="hero-trust hero-enter hero-enter-5">
@@ -64,14 +64,14 @@ export default function Home() {
               <FileText size={20} />
             </div>
             <div>
-              <span>From rough draft to</span>
-              <strong>clear, polished work.</strong>
+              <span>You send the requirements.</span>
+              <strong>I turn them into finished work.</strong>
             </div>
           </div>
         </div>
 
         <a className="scroll-cue" href="#services" aria-label="Scroll to services">
-          <span>Discover more</span>
+          <span>Explore services</span>
           <ArrowDownRight size={18} />
         </a>
       </section>
@@ -91,9 +91,9 @@ export default function Home() {
           <Reveal>
             <div className="section-top-row">
               <SectionHeading
-                eyebrow="What MidnightScribe does"
-                title="From scattered thoughts to finished work."
-                text="Choose focused support for one draft or bring a larger project that needs structure from the ground up."
+                eyebrow="Writing services"
+                title="One place for the writing work on your list."
+                text="From a single online writing job to ongoing content and editing support, each project is handled around the brief you actually send."
               />
               <Link className="text-link" to="/services">
                 See all services <ArrowRight size={17} />
@@ -102,7 +102,7 @@ export default function Home() {
           </Reveal>
 
           <div className="services-grid home-services-grid">
-            {services.slice(0, 6).map((service, index) => {
+            {services.map((service, index) => {
               const Icon = service.icon;
               return (
                 <Reveal key={service.title} delay={index * 70}>
@@ -116,7 +116,7 @@ export default function Home() {
                     <h3>{service.title}</h3>
                     <p>{service.description}</p>
                     <Link to="/contact" className="card-link">
-                      Discuss this service <ArrowRight size={16} />
+                      Send this type of job <ArrowRight size={16} />
                     </Link>
                   </article>
                 </Reveal>
@@ -129,19 +129,19 @@ export default function Home() {
       <section className="section image-story-section">
         <div className="container image-story-grid">
           <Reveal className="image-story-media">
-            <img src="/student-focus.jpg" alt="Student reading and thinking in a warm study space" />
+            <img src="/student-focus.jpg" alt="Student reading and working in a focused study space" />
             <div className="image-note">
               <span>01</span>
-              <p>Clear thinking deserves clear writing.</p>
+              <p>Every job starts with the brief, not a template.</p>
             </div>
           </Reveal>
 
           <Reveal className="image-story-copy" delay={120}>
-            <p className="eyebrow">The MidnightScribe standard</p>
-            <h2>Not just correct. Clear, credible, and distinctly yours.</h2>
+            <p className="eyebrow">How I work</p>
+            <h2>Reliable writing, not generic filler.</h2>
             <p>
-              Strong writing is not about making every sentence sound complicated. It is about choosing the right words,
-              building a confident line of thought, and making every paragraph earn its place.
+              Good online writing work has to do more than reach a word count. I work from the instructions, research the
+              subject where needed, build a clear structure, and edit the final draft before delivery.
             </p>
             <div className="principle-list">
               {strengths.map((item) => (
@@ -154,7 +154,7 @@ export default function Home() {
               ))}
             </div>
             <Link className="button button-outline" to="/about">
-              Read the story <ArrowRight size={18} />
+              About MidnightScribe <ArrowRight size={18} />
             </Link>
           </Reveal>
         </div>
@@ -164,9 +164,9 @@ export default function Home() {
         <div className="container">
           <Reveal>
             <SectionHeading
-              eyebrow="A simple process"
-              title="Less back-and-forth. More forward motion."
-              text="Every project starts with context and ends with a clear deliverable. The middle stays focused."
+              eyebrow="A straightforward process"
+              title="From job brief to finished delivery."
+              text="The process stays simple so you always know what happens next and what information I need from you."
               align="center"
             />
           </Reveal>
@@ -190,14 +190,13 @@ export default function Home() {
             <div className="testimonial-card">
               <Quote className="testimonial-quote-icon" size={34} />
               <p>
-                “The best writing support should leave the final work stronger while still sounding like the person or
-                brand behind it.”
+                “The job should come back clearer, stronger, and ready for the purpose you hired a writer for.”
               </p>
               <div className="testimonial-author">
                 <span className="author-mark">M</span>
                 <div>
-                  <strong>The MidnightScribe promise</strong>
-                  <small>Clarity, voice, and careful thinking</small>
+                  <strong>The MidnightScribe standard</strong>
+                  <small>Follow the brief. Do the work. Deliver with care.</small>
                 </div>
               </div>
             </div>
@@ -210,8 +209,8 @@ export default function Home() {
           <Reveal>
             <SectionHeading
               eyebrow="Frequently asked"
-              title="Before you send the brief."
-              text="A few useful answers about fit, timing, and how projects begin."
+              title="Before you send the job."
+              text="Useful answers about the types of work I take, deadlines, instructions, and how to get started."
             />
           </Reveal>
           <Reveal className="faq-list" delay={100}>

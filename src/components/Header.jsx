@@ -40,7 +40,7 @@ export default function Header() {
         </nav>
 
         <NavLink className="button button-small header-cta" to="/contact">
-          Start a project
+          Send a writing job
         </NavLink>
 
         <button
@@ -63,7 +63,7 @@ export default function Header() {
               </NavLink>
             ))}
             <NavLink className="button" to="/contact">
-              Start a project
+              Send a writing job
             </NavLink>
           </div>
         </div>

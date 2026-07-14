@@ -1,21 +1,30 @@
 # MidnightScribe
 
-A modern responsive writing and editorial services website built with React and Vite.
+A modern responsive website for an independent online writing service, built with React and Vite.
+
+## Brand palette
+
+- Black: `#000000`
+- Dodger Blue: `#1098F7`
+- White: `#FFFFFF`
+- Rosy Taupe: `#B89E97`
+- Almond Silk: `#DECCCC`
 
 ## Features
 
-- Responsive multi-page React site
-- Warm editorial visual system using Poppins and Inter
+- Responsive multi-page React website
 - Full-width student photography hero
-- Scroll reveal and hover animations
-- Services, About, Contact, FAQ, and process sections
+- Poppins and Inter typography
+- Scroll reveal, hover, marquee, and hero animations
+- Writing services, About, Contact, FAQ, and process sections
 - Mobile navigation
 - Contact form powered by `mailto:`
 - Vercel SPA routing configuration
+- Local image assets
 
 ## Contact
 
-Project inquiries open an email draft addressed to:
+Writing-job inquiries are addressed to:
 
 `theemidnightscribe@gmail.com`
 

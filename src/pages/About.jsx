@@ -12,11 +12,11 @@ export default function About() {
         <div className="container page-hero-grid">
           <div>
             <p className="eyebrow">About MidnightScribe</p>
-            <h1>Built for the ideas that keep you thinking.</h1>
+            <h1>An independent writing service built for real briefs and deadlines.</h1>
           </div>
           <p className="page-hero-lead">
-            MidnightScribe is a writing and editorial studio for people who know what they want to say but need help
-            saying it with more clarity, structure, confidence, and impact.
+            MidnightScribe is how I take on online writing jobs from clients who need dependable help with research,
+            drafting, rewriting, editing, and polished final delivery.
           </p>
         </div>
       </section>
@@ -24,25 +24,26 @@ export default function About() {
       <section className="section about-story-section">
         <div className="container about-story-grid">
           <Reveal className="story-image-card">
-            <img src="/writing-detail.jpg" alt="Reader reviewing a book in a warm, quiet setting" />
+            <img src="/writing-detail.jpg" alt="Person reviewing written material in a focused setting" />
             <div className="story-image-caption">
-              <span>Thoughtful work</span>
-              <strong>starts with attention.</strong>
+              <span>Independent writing</span>
+              <strong>built around the job you send.</strong>
             </div>
           </Reveal>
           <Reveal className="story-copy" delay={120}>
             <SectionHeading
-              eyebrow="Why the name?"
-              title="Because some of the best ideas arrive when everything gets quiet."
+              eyebrow="Why MidnightScribe?"
+              title="Because good writing work is often done after the brief arrives and the noise gets quiet."
             />
             <p>
-              MidnightScribe was imagined as a place for the half-formed sentence, the almost-right paragraph, the
-              serious project sitting in a notes app, and the important message that deserves more care before it goes
-              into the world.
+              I built MidnightScribe as a focused way to offer my writing skills online. Clients send the requirements,
+              source material, and deadline; I turn that information into a structured piece of work that fits the agreed
+              purpose.
             </p>
             <p>
-              The work is grounded in a simple belief: strong writing should sound intelligent without becoming stiff,
-              polished without becoming generic, and clear without losing personality.
+              Some jobs begin with a blank page. Others need research, a rewrite, stronger structure, or a final polish.
+              The service is flexible, but the standard stays the same: understand the brief, do the work carefully, and
+              deliver something useful.
             </p>
           </Reveal>
         </div>
@@ -53,17 +54,17 @@ export default function About() {
           <Reveal>
             <SectionHeading
               eyebrow="Working principles"
-              title="The standards behind every page."
-              text="A small set of principles keeps the work consistent even when every project is different."
+              title="What every writing job should get."
+              text="The project may change, but these are the standards I use to keep the work dependable."
               align="center"
             />
           </Reveal>
           <div className="values-grid">
             {[
-              ['01', 'Clarity before cleverness', 'The reader should understand the idea before they admire the sentence.'],
-              ['02', 'Voice over sameness', 'Good editing strengthens your voice instead of replacing it with a template.'],
-              ['03', 'Structure creates confidence', 'A strong argument and a clear sequence make writing easier to trust.'],
-              ['04', 'Details carry credibility', 'Grammar, citations, tone, and consistency matter because readers notice when they are missing.'],
+              ['01', 'Follow the brief', 'The requirements, audience, format, and deadline define the job and guide the final work.'],
+              ['02', 'Research before guessing', 'When a topic needs evidence or context, the writing should be informed rather than improvised.'],
+              ['03', 'Write for the purpose', 'A report, article, proposal, and personal statement should not all sound like the same template.'],
+              ['04', 'Edit before delivery', 'A first draft is not the finish line. Structure, clarity, grammar, and consistency are checked before handoff.'],
             ].map(([number, title, text], index) => (
               <Reveal key={number} delay={index * 80}>
                 <article className="value-card">
@@ -81,13 +82,13 @@ export default function About() {
         <div className="container fit-grid">
           <Reveal>
             <p className="eyebrow">A good fit</p>
-            <h2>For people who care about how the final work reads.</h2>
+            <h2>For clients who need the writing done properly, not just filled with words.</h2>
             <p>
-              Bring a complete draft that needs sharpening, a blank page that needs direction, or a complex idea that
-              needs to become understandable.
+              Send a complete brief, a rough draft, source material, or even a project that still needs the direction
+              clarified. I will confirm what I can take on before the work starts.
             </p>
             <Link className="button button-primary" to="/contact">
-              Tell us what you’re working on <ArrowRight size={18} />
+              Send your writing job <ArrowRight size={18} />
             </Link>
           </Reveal>
           <Reveal className="fit-list" delay={120}>
@@ -103,7 +104,7 @@ export default function About() {
               <span>
                 <Feather size={17} />
               </span>
-              <p>Flexible support across short and long-form projects</p>
+              <p>Flexible support for one-off and recurring writing jobs</p>
             </div>
           </Reveal>
         </div>
