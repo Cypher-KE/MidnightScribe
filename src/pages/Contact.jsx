@@ -1,5 +1,6 @@
 import { ArrowRight, Clock3, Mail, Send } from 'lucide-react';
 import { useMemo, useState } from 'react';
+import Reveal from '../components/Reveal';
 
 const email = 'theemidnightscribe@gmail.com';
 
@@ -47,7 +48,7 @@ export default function Contact() {
 
       <section className="section contact-section">
         <div className="container contact-grid">
-          <div className="contact-info">
+          <Reveal className="contact-info">
             <div>
               <p className="eyebrow">Start here</p>
               <h2>A strong brief makes for stronger work.</h2>
@@ -81,71 +82,73 @@ export default function Contact() {
               <span className="mini-moon" />
               <p>Have files to share? Mention them in your email and attach them before sending.</p>
             </div>
-          </div>
+          </Reveal>
 
-          <form className="contact-form" onSubmit={handleSubmit}>
-            <div className="form-row">
+          <Reveal delay={120}>
+            <form className="contact-form" onSubmit={handleSubmit}>
+              <div className="form-row">
+                <label>
+                  Your name
+                  <input name="name" value={form.name} onChange={updateField} placeholder="Jane Doe" required />
+                </label>
+                <label>
+                  Your email
+                  <input
+                    type="email"
+                    name="email"
+                    value={form.email}
+                    onChange={updateField}
+                    placeholder="jane@example.com"
+                    required
+                  />
+                </label>
+              </div>
+
               <label>
-                Your name
-                <input name="name" value={form.name} onChange={updateField} placeholder="Jane Doe" required />
+                What do you need?
+                <select name="project" value={form.project} onChange={updateField}>
+                  <option>Writing & draft development</option>
+                  <option>Editing & proofreading</option>
+                  <option>Academic writing support</option>
+                  <option>Professional documents</option>
+                  <option>Content & brand writing</option>
+                  <option>Research & review</option>
+                  <option>Something else</option>
+                </select>
               </label>
+
               <label>
-                Your email
+                Deadline
                 <input
-                  type="email"
-                  name="email"
-                  value={form.email}
+                  type="text"
+                  name="deadline"
+                  value={form.deadline}
                   onChange={updateField}
-                  placeholder="jane@example.com"
+                  placeholder="e.g. Friday, 24 July"
+                />
+              </label>
+
+              <label>
+                Project details
+                <textarea
+                  name="message"
+                  value={form.message}
+                  onChange={updateField}
+                  rows="7"
+                  placeholder="Tell us what you are working on, what you already have, and what a successful outcome looks like."
                   required
                 />
               </label>
-            </div>
 
-            <label>
-              What do you need?
-              <select name="project" value={form.project} onChange={updateField}>
-                <option>Writing & draft development</option>
-                <option>Editing & proofreading</option>
-                <option>Academic writing support</option>
-                <option>Professional documents</option>
-                <option>Content & brand writing</option>
-                <option>Research & review</option>
-                <option>Something else</option>
-              </select>
-            </label>
-
-            <label>
-              Deadline
-              <input
-                type="text"
-                name="deadline"
-                value={form.deadline}
-                onChange={updateField}
-                placeholder="e.g. Friday, 24 July"
-              />
-            </label>
-
-            <label>
-              Project details
-              <textarea
-                name="message"
-                value={form.message}
-                onChange={updateField}
-                rows="7"
-                placeholder="Tell us what you are working on, what you already have, and what a successful outcome looks like."
-                required
-              />
-            </label>
-
-            <button className="button form-submit" type="submit">
-              Open email draft <Send size={18} />
-            </button>
-            <p className="form-help">
-              This does not store your message on the website. It opens your default email application using a `mailto:`
-              link.
-            </p>
-          </form>
+              <button className="button button-primary form-submit" type="submit">
+                Open email draft <Send size={18} />
+              </button>
+              <p className="form-help">
+                This does not store your message on the website. It opens your default email application using a mailto
+                link.
+              </p>
+            </form>
+          </Reveal>
         </div>
       </section>
 
