@@ -2001,7 +2001,7 @@ h3 {
   display: grid;
   grid-template-columns: 1.2fr 0.6fr 1fr;
   gap: 50px;
-  padding-top: 68px;
+  padding-top: 48px;
   padding-bottom: 56px;
 }
 
@@ -2009,7 +2009,8 @@ h3 {
   max-width: 330px;
   margin: 22px 0 0;
   color: rgba(255, 255, 255, 0.56);
-  font-size: 0.82rem;
+  font-size: 0.86rem;
+  font-weight: 700;
 }
 
 .footer-links {
@@ -2021,7 +2022,7 @@ h3 {
 .footer-links > span {
   margin-bottom: 5px;
   color: var(--apricot);
-  font-size: 0.67rem;
+  font-size: 0.76rem;
   font-weight: 600;
   letter-spacing: 0.13em;
   text-transform: uppercase;
@@ -2030,8 +2031,9 @@ h3 {
 .footer-links a {
   width: fit-content;
   color: rgba(255, 255, 255, 0.68);
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   transition: color 180ms ease;
+  font-weight: 700;
 }
 
 .footer-links a:hover {
@@ -2057,7 +2059,7 @@ h3 {
 .footer-bottom p {
   margin: 0;
   color: rgba(255, 255, 255, 0.42);
-  font-size: 0.68rem;
+  font-size: 0.78rem;
 }
 
 /* 404 */
