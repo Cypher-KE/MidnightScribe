@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import CTASection from '../components/CTASection';
 import Reveal from '../components/Reveal';
 import SectionHeading from '../components/SectionHeading';
-import { pricing, processSteps, services, supportAreas } from '../data/siteData';
+import { examPrepAreas, pricing, processSteps, serviceBenefits, services, supportAreas } from '../data/siteData';
 
 export default function Services() {
   return (
@@ -108,6 +108,49 @@ export default function Services() {
               </Reveal>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="section service-benefits-section">
+        <div className="container">
+          <Reveal>
+            <SectionHeading
+              eyebrow="Included support"
+              title="Revision support, direct communication, and practical ways to save."
+              text="These features are applied according to the agreed scope and confirmed before a project begins."
+              align="center"
+            />
+          </Reveal>
+          <div className="benefits-grid">
+            {serviceBenefits.map(([title, text], index) => (
+              <Reveal key={title} delay={(index % 3) * 70}>
+                <article className="benefit-card">
+                  <span><Check size={16} /></span>
+                  <div>
+                    <h3>{title}</h3>
+                    <p>{text}</p>
+                  </div>
+                </article>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section exam-prep-section">
+        <div className="container exam-prep-grid">
+          <Reveal>
+            <SectionHeading
+              eyebrow="Exam preparation"
+              title="Focused preparation for healthcare and professional certification exams."
+              text="Support can include study planning, concept review, practice-question walkthroughs, and feedback. MidnightScribe does not take exams, access student accounts, or bypass proctoring systems."
+            />
+          </Reveal>
+          <Reveal className="support-chip-grid" delay={100}>
+            {examPrepAreas.map((item) => (
+              <span key={item}>{item}</span>
+            ))}
+          </Reveal>
         </div>
       </section>
 

@@ -48,7 +48,7 @@ export const services = [
     title: 'STEM, Data & Technical Support',
     description:
       'Step-by-step tutoring, explanation, review, and technical writing support for quantitative and technical subjects.',
-    items: ['Math and statistics tutoring', 'Data analysis and technical reports', 'Programming guidance and debugging support'],
+    items: ['Math and statistics tutoring', 'Lab reports and data-analysis writeups', 'Programming guidance and debugging support'],
   },
 ];
 
@@ -63,21 +63,38 @@ export const pricing = [
     featured: true,
   },
   {
-    label: 'Technical & STEM writing',
+    label: 'Lab reports & technical papers',
     price: '$15',
     unit: '/ page',
     note: 'Starting rate',
-    description: 'For technical reports, data-analysis writeups, STEM explanations, calculation walkthroughs, and similar technical writing.',
-    items: ['Step-by-step technical explanation', 'Data and calculation walkthroughs', 'Technical writing and debugging guidance'],
+    description: 'For technical reports, lab-report editing, data-analysis writeups, STEM explanations, and similar technical work.',
+    items: ['Technical structure and clarity review', 'Data and calculation walkthroughs', 'Citation and formatting support'],
   },
   {
-    label: 'Ongoing support',
-    price: 'Custom',
-    unit: ' quote',
-    note: 'Weekly or monthly',
-    description: 'For clients who need recurring writing, editing, tutoring, research, or content support over a longer period.',
-    items: ['Defined scope and workload', 'Priority scheduling where agreed', 'One clear point of contact'],
+    label: 'Non-technical term support',
+    price: '$500',
+    unit: '/ term',
+    note: 'Starting plan',
+    description: 'For recurring tutoring, study planning, writing feedback, and review support across a non-technical term.',
+    items: ['Weekly support schedule', 'Study planning and progress check-ins', 'Writing, editing, and feedback sessions'],
   },
+  {
+    label: 'Technical term support',
+    price: '$600',
+    unit: '/ term',
+    note: 'Starting plan',
+    description: 'For recurring STEM tutoring, technical explanations, data support, and structured review throughout a term.',
+    items: ['Regular technical tutoring sessions', 'Problem-solving and concept review', 'Lab-report and data-analysis guidance'],
+  },
+];
+
+export const serviceBenefits = [
+  ['14-day revision window', 'Reasonable revisions are available for up to 14 days when the delivery needs to better match the original agreed brief.'],
+  ['Direct one-to-one support', 'Communicate directly about requirements, feedback, and next steps without being passed between multiple people.'],
+  ['Review sessions', 'Book a focused review session for feedback, concept clarification, or preparation before you submit your own work.'],
+  ['15% off a first order', 'New clients receive 15% off their first eligible writing, editing, or tutoring order.'],
+  ['Bulk-project discounts', 'Discounted pricing may be available when several related deliverables are scoped and scheduled together.'],
+  ['Flexible payment scheduling', 'Larger recurring projects can be split into agreed weekly, biweekly, or monthly milestones.'],
 ];
 
 export const supportAreas = [
@@ -90,9 +107,50 @@ export const supportAreas = [
   'Math & statistics tutoring',
   'Accounting concepts',
   'Biology & science support',
+  'Lab-report review',
   'Data analysis',
   'Programming guidance',
   'Editing & proofreading',
+  'Thesis & dissertation editing',
+];
+
+export const examPrepAreas = [
+  'HESI A2',
+  'HESI Pharmacology',
+  'HESI Fundamentals',
+  'HESI Pathophysiology',
+  'HESI Health Assessment',
+  'TEAS',
+  'ExCPT',
+  'CCMA',
+  'CPhT',
+  'CPT',
+  'CET',
+  'CMAA',
+  'CEHRS',
+  'CBCS',
+  'CPC / CPC-A',
+];
+
+export const testimonials = [
+  {
+    quote: 'Add a verified client review about the clarity, structure, and quality of a completed writing project.',
+    client: 'Verified writing client',
+    service: 'Writing & research',
+    placeholder: true,
+  },
+  {
+    quote: 'Add a verified client review about communication, turnaround time, and how revisions were handled.',
+    client: 'Verified editing client',
+    service: 'Editing & proofreading',
+    placeholder: true,
+  },
+  {
+    quote: 'Add a verified client review about tutoring, technical explanations, or improved understanding.',
+    client: 'Verified tutoring client',
+    service: 'STEM & technical support',
+    placeholder: true,
+  },
 ];
 
 export const trustPoints = [
@@ -103,7 +161,7 @@ export const trustPoints = [
   ['Direct communication', 'You communicate directly with MidnightScribe rather than being passed between multiple people.'],
   ['Deadline-aware delivery', 'Deadlines are confirmed before accepting a project, and urgent work is only taken when the timing is realistic.'],
   ['Flexible support', 'One-off projects and recurring writing, editing, research, or tutoring support can be arranged.'],
-  ['No grade guarantees', 'Academic support focuses on learning, guidance, writing, and editing—not guaranteed grades or taking assessments for clients.'],
+  ['Academic integrity', 'Support focuses on tutoring, guidance, writing, and editing—not impersonation, proctor bypass, or taking graded assessments.'],
 ];
 
 export const processSteps = [
@@ -133,12 +191,17 @@ export const faqs = [
   {
     question: 'What kinds of writing and study support do you offer?',
     answer:
-      'I take on essays, research papers, case studies, literature reviews, reports, professional documents, articles, editing, rewriting, proofreading, research guidance, tutoring, data analysis support, and programming guidance. Send the requirements and I will confirm whether the project is a good fit.',
+      'I take on essays, research papers, case studies, literature reviews, reports, professional documents, articles, editing, rewriting, proofreading, research guidance, tutoring, data-analysis support, lab-report review, and programming guidance. Send the requirements and I will confirm whether the project is a good fit.',
   },
   {
     question: 'How much does the service cost?',
     answer:
-      'Writing and research support starts from $10 per page, while technical and STEM writing starts from $15 per page. Final pricing depends on complexity, deadline, length, research requirements, and the exact scope of work.',
+      'Writing and research support starts from $10 per page, while lab reports and technical papers start from $15 per page. Recurring non-technical term support starts from $500 and technical term support starts from $600. Final pricing depends on complexity, deadline, length, research requirements, and exact scope.',
+  },
+  {
+    question: 'Do new clients or larger projects receive discounts?',
+    answer:
+      'New clients receive 15% off their first eligible order. Bulk-project discounts and milestone-based payment scheduling may also be available when the scope is agreed in advance.',
   },
   {
     question: 'How do I send a project?',
@@ -158,12 +221,12 @@ export const faqs = [
   {
     question: 'Do you offer revisions?',
     answer:
-      'Yes. Reasonable revisions are available when the delivered work needs to better match the original agreed brief. A major change in topic, scope, length, or instructions may require a new quote.',
+      'Yes. Reasonable revisions are available for up to 14 days when the delivered work needs to better match the original agreed brief. A major change in topic, scope, length, or instructions may require a new quote.',
   },
   {
     question: 'Can you take tests, exams, or graded quizzes for me?',
     answer:
-      'No. I can help you prepare through tutoring, concept explanations, practice, study planning, editing, and feedback, but I do not impersonate students or take graded assessments on their behalf.',
+      'No. I can help you prepare through tutoring, concept explanations, practice, study planning, editing, and feedback, but I do not impersonate students, bypass proctoring, access student accounts, or take graded assessments on their behalf.',
   },
   {
     question: 'Is my project kept private?',

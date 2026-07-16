@@ -17,9 +17,11 @@ import {
   faqs,
   pricing,
   processSteps,
+  serviceBenefits,
   services,
   strengths,
   supportAreas,
+  testimonials,
   trustPoints,
 } from '../data/siteData';
 
@@ -195,6 +197,32 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="section benefits-section">
+        <div className="container">
+          <Reveal>
+            <SectionHeading
+              eyebrow="Support beyond delivery"
+              title="Useful extras for one-off and recurring projects."
+              text="Revision support, direct communication, discounts, and flexible milestones make larger projects easier to plan."
+              align="center"
+            />
+          </Reveal>
+          <div className="benefits-grid">
+            {serviceBenefits.map(([title, text], index) => (
+              <Reveal key={title} delay={(index % 3) * 70}>
+                <article className="benefit-card">
+                  <span><Check size={16} /></span>
+                  <div>
+                    <h3>{title}</h3>
+                    <p>{text}</p>
+                  </div>
+                </article>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="section image-story-section">
         <div className="container image-story-grid">
           <Reveal className="image-story-media">
@@ -283,14 +311,37 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section testimonial-section">
+      <section className="section testimonial-section" id="testimonials">
         <div className="container">
           <Reveal>
-            <div className="testimonial-card">
+            <SectionHeading
+              eyebrow="Testimonials"
+              title="A ready-made home for verified client feedback."
+              text="The cards below are clearly marked placeholders. Replace them with real reviews before presenting them as client testimonials."
+              align="center"
+            />
+          </Reveal>
+
+          <div className="testimonial-grid">
+            {testimonials.map((item, index) => (
+              <Reveal key={item.service} delay={index * 80}>
+                <article className="testimonial-review-card">
+                  <Quote size={24} />
+                  <p>“{item.quote}”</p>
+                  <div>
+                    <strong>{item.client}</strong>
+                    <span>{item.service}</span>
+                  </div>
+                  {item.placeholder && <small>Placeholder — replace with verified feedback</small>}
+                </article>
+              </Reveal>
+            ))}
+          </div>
+
+          <Reveal delay={120}>
+            <div className="testimonial-card testimonial-standard-card">
               <Quote className="testimonial-quote-icon" size={34} />
-              <p>
-                “The goal is simple: clearer work, stronger understanding, and support that actually matches the brief.”
-              </p>
+              <p>“Clearer work, stronger understanding, and support that actually matches the brief.”</p>
               <div className="testimonial-author">
                 <span className="author-mark">M</span>
                 <div>
