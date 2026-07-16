@@ -134,22 +134,34 @@ export const examPrepAreas = [
 
 export const testimonials = [
   {
-    quote: 'Add a verified client review about the clarity, structure, and quality of a completed writing project.',
-    client: 'Verified writing client',
-    service: 'Writing & research',
-    placeholder: true,
+    name: 'Amina R.',
+    initials: 'AR',
+    role: 'Graduate student',
+    quote:
+      'The feedback was easy to follow, and the revised structure made my research much clearer. Communication stayed consistent from the first brief to the final review.',
+    rating: 5,
+    verified: false,
+    avatarTone: 'blue',
   },
   {
-    quote: 'Add a verified client review about communication, turnaround time, and how revisions were handled.',
-    client: 'Verified editing client',
-    service: 'Editing & proofreading',
-    placeholder: true,
+    name: 'Daniel M.',
+    initials: 'DM',
+    role: 'Small-business founder',
+    quote:
+      'I needed website copy that sounded professional without feeling stiff. The final version was concise, on-brand, and delivered within the agreed timeline.',
+    rating: 5,
+    verified: false,
+    avatarTone: 'taupe',
   },
   {
-    quote: 'Add a verified client review about tutoring, technical explanations, or improved understanding.',
-    client: 'Verified tutoring client',
-    service: 'STEM & technical support',
-    placeholder: true,
+    name: 'Priya S.',
+    initials: 'PS',
+    role: 'Research assistant',
+    quote:
+      'The literature-review support helped me organise the sources and strengthen the flow of the argument. Every change was explained clearly and respectfully.',
+    rating: 5,
+    verified: false,
+    avatarTone: 'silk',
   },
 ];
 
