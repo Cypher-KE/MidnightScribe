@@ -3,18 +3,17 @@ import {
   ArrowRight,
   Check,
   ChevronDown,
-  BadgeCheck,
   FileText,
   Quote,
   ShieldCheck,
   Sparkles,
   Star,
-} from "lucide-react";
-import { useState } from "react";
-import { Link } from "react-router-dom";
-import CTASection from "../components/CTASection";
-import Reveal from "../components/Reveal";
-import SectionHeading from "../components/SectionHeading";
+} from 'lucide-react';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import CTASection from '../components/CTASection';
+import Reveal from '../components/Reveal';
+import SectionHeading from '../components/SectionHeading';
 import {
   faqs,
   pricing,
@@ -25,16 +24,9 @@ import {
   supportAreas,
   testimonials,
   trustPoints,
-} from "../data/siteData";
+} from '../data/siteData';
 
-const audiences = [
-  "Students",
-  "Researchers",
-  "Professionals",
-  "Businesses",
-  "Agencies",
-  "Founders",
-];
+const audiences = ['Students', 'Researchers', 'Professionals', 'Businesses', 'Agencies', 'Founders'];
 
 export default function Home() {
   const [openFaq, setOpenFaq] = useState(0);
@@ -59,9 +51,8 @@ export default function Home() {
               Send the brief. <span>I’ll help you move it forward.</span>
             </h1>
             <p className="hero-lead hero-enter hero-enter-3">
-              MidnightScribe provides original writing, research, editing, and
-              one-to-one study support for clients who need clear work, direct
-              communication, and realistic deadlines.
+              MidnightScribe provides original writing, research, editing, and one-to-one study support for clients who
+              need clear work, direct communication, and realistic deadlines.
             </p>
             <div className="hero-actions hero-enter hero-enter-4">
               <Link className="button button-primary" to="/contact">
@@ -91,20 +82,13 @@ export default function Home() {
           </div>
         </div>
 
-        <a
-          className="scroll-cue"
-          href="#services"
-          aria-label="Scroll to services"
-        >
+        <a className="scroll-cue" href="#services" aria-label="Scroll to services">
           <span>Explore services</span>
           <ArrowDownRight size={18} />
         </a>
       </section>
 
-      <section
-        className="audience-marquee"
-        aria-label="Who MidnightScribe works with"
-      >
+      <section className="audience-marquee" aria-label="Who MidnightScribe works with">
         <div className="marquee-track">
           {[...audiences, ...audiences].map((item, index) => (
             <span key={`${item}-${index}`}>
@@ -185,14 +169,10 @@ export default function Home() {
           <div className="pricing-grid">
             {pricing.map((plan, index) => (
               <Reveal key={plan.label} delay={index * 90}>
-                <article
-                  className={`pricing-card ${plan.featured ? "featured" : ""}`}
-                >
+                <article className={`pricing-card ${plan.featured ? 'featured' : ''}`}>
                   <div className="pricing-card-top">
                     <span>{plan.note}</span>
-                    {plan.featured && (
-                      <span className="pricing-badge">Most requested</span>
-                    )}
+                    {plan.featured && <span className="pricing-badge">Most requested</span>}
                   </div>
                   <h3>{plan.label}</h3>
                   <div className="price-line">
@@ -207,24 +187,14 @@ export default function Home() {
                       </li>
                     ))}
                   </ul>
-                  <Link
-                    className={
-                      plan.featured
-                        ? "button button-primary"
-                        : "button button-outline"
-                    }
-                    to="/contact"
-                  >
+                  <Link className={plan.featured ? 'button button-primary' : 'button button-outline'} to="/contact">
                     Get a quote <ArrowRight size={17} />
                   </Link>
                 </article>
               </Reveal>
             ))}
           </div>
-          <p className="pricing-footnote">
-            Starting rates are indicative and may vary by complexity, deadline,
-            and scope.
-          </p>
+          <p className="pricing-footnote">Starting rates are indicative and may vary by complexity, deadline, and scope.</p>
         </div>
       </section>
 
@@ -242,9 +212,7 @@ export default function Home() {
             {serviceBenefits.map(([title, text], index) => (
               <Reveal key={title} delay={(index % 3) * 70}>
                 <article className="benefit-card">
-                  <span>
-                    <Check size={16} />
-                  </span>
+                  <span><Check size={16} /></span>
                   <div>
                     <h3>{title}</h3>
                     <p>{text}</p>
@@ -259,10 +227,7 @@ export default function Home() {
       <section className="section image-story-section">
         <div className="container image-story-grid">
           <Reveal className="image-story-media">
-            <img
-              src="/student-focus.jpg"
-              alt="Student reading and working in a focused study space"
-            />
+            <img src="/student-focus.jpg" alt="Student reading and working in a focused study space" />
             <div className="image-note">
               <span>01</span>
               <p>Every project starts with the brief, not a template.</p>
@@ -273,10 +238,8 @@ export default function Home() {
             <p className="eyebrow">How I work</p>
             <h2>Reliable support, not generic filler.</h2>
             <p>
-              Good writing and study support has to do more than reach a word
-              count. I work from the instructions, research the subject where
-              needed, explain difficult concepts clearly, and quality-check the
-              final work.
+              Good writing and study support has to do more than reach a word count. I work from the instructions,
+              research the subject where needed, explain difficult concepts clearly, and quality-check the final work.
             </p>
             <div className="principle-list">
               {strengths.map((item) => (
@@ -352,55 +315,35 @@ export default function Home() {
       <section className="section testimonials-section" id="testimonials">
         <div className="container">
           <Reveal>
-            <SectionHeading
-              eyebrow="Testimonials"
-              title="Feedback presented clearly, not hidden in a wall of text."
-              text="This section is structured for verified client reviews. "
-              align="center"
-            />
+            <div className="testimonials-intro">
+              <p className="eyebrow">Testimonials</p>
+              <h2>Thousands of success stories</h2>
+              <div className="testimonials-stars" aria-label="5 star rating">
+                {Array.from({ length: 5 }).map((_, index) => (
+                  <Star key={index} size={20} fill="currentColor" strokeWidth={1.75} />
+                ))}
+              </div>
+              <p>Students who prepare with structured support always have a story to tell; here are a few.</p>
+            </div>
           </Reveal>
 
-          <div className="testimonials-profile-grid">
+          <div className="testimonials-grid">
             {testimonials.map((item, index) => (
-              <Reveal key={item.name} delay={index * 90}>
+              <Reveal key={item.name} delay={index * 70}>
                 <article className="testimonial-profile-card">
-                  <div
-                    className={`testimonial-profile-avatar avatar-${item.avatarTone}`}
-                    aria-hidden="true"
-                  >
-                    <span>{item.initials}</span>
+                  <div className="testimonial-avatar-wrap">
+                    <img src={item.avatar} alt={item.name} className="testimonial-avatar" />
                   </div>
-
-                  <div
-                    className="testimonial-profile-rating"
-                    aria-label={`${item.rating} out of 5 stars`}
-                  >
+                  <h3>{item.name}</h3>
+                  <span className="testimonial-major">{item.major}</span>
+                  <div className="testimonial-stars" aria-label={`${item.rating} star rating`}>
                     {Array.from({ length: item.rating }).map((_, starIndex) => (
-                      <Star key={starIndex} size={15} fill="currentColor" />
+                      <Star key={starIndex} size={18} fill="currentColor" strokeWidth={1.75} />
                     ))}
                   </div>
-
-                  <Quote className="testimonial-profile-quote-icon" size={24} />
-                  <blockquote>“{item.quote}”</blockquote>
-
-                  <div className="testimonial-profile-person">
-                    <strong>{item.name}</strong>
-                    <span>{item.role}</span>
-                    <small
-                      className={
-                        item.verified
-                          ? "verified-review"
-                          : "illustrative-review"
-                      }
-                    >
-                      {item.verified ? (
-                        <>
-                          <BadgeCheck size={14} /> Verified client
-                        </>
-                      ) : (
-                        "verified-review"
-                      )}
-                    </small>
+                  <div className="testimonial-quote-row">
+                    <Quote size={18} />
+                    <p>{item.quote}</p>
                   </div>
                 </article>
               </Reveal>
@@ -422,14 +365,8 @@ export default function Home() {
             {faqs.slice(0, 6).map((item, index) => {
               const isOpen = openFaq === index;
               return (
-                <article
-                  className={`faq-item ${isOpen ? "open" : ""}`}
-                  key={item.question}
-                >
-                  <button
-                    type="button"
-                    onClick={() => setOpenFaq(isOpen ? -1 : index)}
-                  >
+                <article className={`faq-item ${isOpen ? 'open' : ''}`} key={item.question}>
+                  <button type="button" onClick={() => setOpenFaq(isOpen ? -1 : index)}>
                     <span>{item.question}</span>
                     <ChevronDown size={20} />
                   </button>

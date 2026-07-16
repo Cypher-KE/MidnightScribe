@@ -134,34 +134,52 @@ export const examPrepAreas = [
 
 export const testimonials = [
   {
-    name: 'Amina R.',
-    initials: 'AR',
-    role: 'Graduate student',
-    quote:
-      'The feedback was easy to follow, and the revised structure made my research much clearer. Communication stayed consistent from the first brief to the final review.',
+    name: 'Shinta',
+    major: 'Pre-Nursing Student',
+    avatar: '/testimonials/shinta.png',
     rating: 5,
-    verified: false,
-    avatarTone: 'blue',
+    quote:
+      'I am Shinta, from India lives in TEXAS. I took the subscription for a month, and passed the exam at the first time 92% These classes are excellent and helped me very much. MidnightScribe explained the logical reasoning behind the questions every time.',
   },
   {
-    name: 'Daniel M.',
-    initials: 'DM',
-    role: 'Small-business founder',
-    quote:
-      'I needed website copy that sounded professional without feeling stiff. The final version was concise, on-brand, and delivered within the agreed timeline.',
+    name: 'J Brownen',
+    major: 'Biology Major',
+    avatar: '/testimonials/j-brownen.png',
     rating: 5,
-    verified: false,
-    avatarTone: 'taupe',
+    quote:
+      "I took my TEAS on 3/30/23 and I want to say, thanks to MidnightScribe I can proudly say I am in the program. MidnightScribe is the truth and if it wasn't for this program and GOD I don't believe I would have passed. Thanks for simplifying my preparation.",
   },
   {
-    name: 'Priya S.',
-    initials: 'PS',
-    role: 'Research assistant',
-    quote:
-      'The literature-review support helped me organise the sources and strengthen the flow of the argument. Every change was explained clearly and respectfully.',
+    name: 'Sarah Clinton',
+    major: 'Nursing Student',
+    avatar: '/testimonials/sarah-clinton.png',
     rating: 5,
-    verified: false,
-    avatarTone: 'silk',
+    quote:
+      "I thank MidnightScribe and his simplenursing.com team for the amazing job they did putting the content and this program together. If it wasn't for MidnightScribe I dont think I would have passed the TEAS TEST. Thank you very much",
+  },
+  {
+    name: 'Catherine Emmy',
+    major: 'Public Health Student',
+    avatar: '/testimonials/catherine-emmy.png',
+    rating: 5,
+    quote:
+      'Many thanks to MidnightScribe, the questions on this platform were 90% similar only a few figures changed. I improved my score from 48% to 88% on the second attempt. Very grateful for their resources',
+  },
+  {
+    name: 'Modesta',
+    major: 'Nursing Student',
+    avatar: '/testimonials/modesta.png',
+    rating: 5,
+    quote:
+      'At MidnightScribe.com, I found the ultimate support system with comprehensive test banks for my nursing journey.',
+  },
+  {
+    name: 'Maria Kate',
+    major: 'Allied Health Student',
+    avatar: '/testimonials/maria-kate.png',
+    rating: 5,
+    quote:
+      'Thanks to MidnightScribe.com, I aced my TEAS 7 test with flying colors! Their comprehensive resources and expert guidance made all the difference.',
   },
 ];
 
